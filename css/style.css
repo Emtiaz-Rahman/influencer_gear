@@ -78,7 +78,7 @@ section {
 }
 /* ==== menu end ====== */
 .banner-part{
-padding: 150px 0;
+padding: 100px 0 0;
 color:black;
 }
 .banner-inner {
@@ -149,180 +149,186 @@ border: 2px solid #E02C6D;
 box-shadow: 0 0 12px #E02C6D;
 }
 /* ======= banner end === */
-
-
-#banner_part{
-    display: flex;
-    justify-content: space-between;
-    
-
+.collection-part{
+    padding: 20px 0 0;
+  
 }
-.banner_text h1{
-    font-size: 52px;
-}
-.banner_text span{
-    display: block;
-}
-.banner_text p{
-    font-size: 16px;
-    color: #3A3A3A;
-    margin-top: 16px;
-    width: 400px;
-}
-.button_part{
-    border-radius: 41px;
-    background: #E02C6D;
-    font-size: 16px;
-    color: #FFFFFF;
-    padding: 10px 24px;
-    margin-top: 16.1px;
-    border: 0;
-}
-.banner_img img{
-    width: 85%;
-    border: 2px solid rgba(22, 18, 18, 0.123);
-    border-radius: 50%;
-    padding: 4px;
-}
-/* ============== common css end ============ */
-.collection{
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-    padding: 15px;
-    border-radius: 10px;
-}
-
-.collection_title{
+.collection-title {
+    margin-bottom: 40px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-bottom: 40px;
 }
-.collection_title h2{
-    font-size: 28px;
+.collection-title h2 {
     color: #3A3A3A;
-}
-.collection_img img{
-    width: 300px;
-    height: 256px;
-    border-radius: 5px;
-}
-.collection_detail h2{
     font-size: 28px;
-    color: #18191F;
-    margin-top: 16px;
 }
-.collection_detail h3{
-    font-size: 24px;
-    color: rgba(0, 0, 0, 0.87)
-}
-.star i {
-    font-size: 12px;
-    color: orange;
-}
-.star span{
-    font-size: 14px;
-    color: #5E6366;
-}
-.collection_detail p{
-    font-size: 14px;
-    color: #787885;
-}
-.collection_detail p span{
-    display: block;
-}
-.collection_area{
+.collection-inner {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-row-gap:30px;
-    grid-column-gap:30px;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
 }
-.see_more{
+.collection-img img {
+    width: 100%;
+    height: 256px;
+}
+.collection-info {
+    padding: 15px;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.collection-details h2 {
+    color: #18191F;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    padding: 5px 0;
+}
+.collection-details h3 {
+    color: #18191F;
+}
+.collection-star i {
+    color: orange;
+    font-size: 12px;
+}
+.collection-star span {
+    color: gray;
+    font-weight: 600;
+}
+.collection-details p {
+    color: #6C6C6C;
+    font-weight: 600;
     font-size: 16px;
-    color: rgba(224, 44, 109, 0.87);
+    line-height: 26px;
+}
+.collection-details p span {
     display: block;
-    text-align: right;
-    padding-top: 100px;
-    
 }
 
-/* ============== collection part end ============ */
-
-#contact_detail{
-    margin: 40px 0;
+.see-more {
+    padding: 20px 0;
+    display: flex;
+    justify-content: right;
 }
-.contact_title h3{
+.see-more a {
+    color: #E02C6D;
+    font-weight: bold;
+}
+
+/* ==== collection end == */
+.contact-part{
+    padding: 30px 0 60px;
+    text-align: center;
+    margin-bottom: 0;
+}
+.contact-text {
+    text-align: center;
+}
+.contact-text h3 {
+    color: black;
+    font-size: 27px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 30px;
+}
+.contact-form {
+    display: inline-block;
+    text-align: center;
+}
+.contact-form input {
+    display: block;
+    width: 555px;
+    height: 55px;
+    background: transparent;
+    border-radius: 5px;
+    border: 1px solid #000;
     margin-bottom: 20px;
-    font-size: 25px;
+    padding-left: 20px;
 }
-.contact_area{
-     text-align: center;
+.contact-form input:nth-child(2) {
+    height: 155px;
+    padding-top: 0;
 }
-.contact_form{
+.contact-form button {
+    padding: 10px 40px;
+    text-align: center;
+    border: 0;
+    background: #E02C6D;
+    border-radius: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    cursor: pointer;
+}
+.contact-form button {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+}
+/* === contact end ====== */
+.footer-part {
+    padding: 40px 0;
+    text-align: center;
+    background: rgb(4, 4, 32);
+}
+.footer-logo img {
+    width: 483px;
+    height: 110px;
+}
+.footer-social ul {
     display: flex;
     justify-content: center;
+    padding-top: 10px;
 }
-.contact_form input{
-    border: 2px solid black;
-    border-radius: 10px;
-    padding-left: 10px;
-    margin-bottom: 20px;
-    display:block;
-    height: 40px;
-    width:500px;
-
-}
-.message_part{
-    height: 150px !important ;
-}
-.input_button{
-    border: 0 !important;
-    border-radius: 10px;
-    color: white;
-    background-color: #E02C6D;
-    margin: 0 auto;
-    display:inline-block;
-    width: 110px !important;
-}
-
-
-
-
-
-
-
-
- /* ================= contect part end ============== */
-
-.footer_part{
-background: rgb(2, 2, 36);
+.footer-social ul li a {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
     text-align: center;
-    padding: 30px 0;
-    color: #FFFFFF;
-}
-.footer_text h2{
-    font-size: 24px;
-}
-p{
-    font-size: 14px;
-}
-p span{
-    display: block;
-    font-size: 14px;
-}
-.footer_icon{
-    margin-top: 17px;
-}
-.footer_icon i{
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background:#aaaa;
+    color: black;
     margin-left: 16px;
+    font-size: 15px;
+    font-weight: 700;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
 }
-/* ============== footer part end ============ */
+.footer-social ul li a:hover {
+    background: #fff;
+    color: #E72A40;
+}
+.footer-top {
+    color: #fff;
+}
+.footer-top p {
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+    padding-top: 10px;
+}
+.footer-top p span {
+    display: block;
+}
+.search-menu {
+    display: none;
+}
+.all-menu {
+    display: block;
+}
+
+/* === footer end ====== */
 
 
-/*====================
-Media Queries
- =====================*/
- /* mobile devices */
- @media only screen and (max-width: 688px) {
-     
- }
- 
